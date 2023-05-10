@@ -1,14 +1,14 @@
-#LİSTELER:
-"""
+LİSTELER:
+
 best_heavy_weigths=["Mike tyson","Muhammed Ali", "Lenox Lewis", "Evander Holyfield"]
 for boxer in best_heavy_weigths:
     print(boxer)
-"""
-#Kullanıcıdan aldığımız bir ismin liste içerisinde var mı yok mu anlamak için bir algoritma yapalım
-"""
+
+Kullanıcıdan aldığımız bir ismin liste içerisinde var mı yok mu anlamak için bir algoritma yapalım
+
 isim= input("Bir isim giriniz: ")
 best_heavy_weigths=["Mike Tyson","Muhammed Ali", "Lenox Lewis", "Evander Holyfield"]
-sss
+
 if isim== "Mike Tyson" :
     print("Mike Tyson listede vardır")
 elif isim== "Muhammed Ali":
@@ -19,9 +19,8 @@ elif isim== "Evander Holyfield":
     print("Evander Holyfield listede vardır")
 else:
     print(f" {isim} listede yoktur")
-"""
-# KISAA YOLU:
-"""
+
+2.yol;
 isim= input("Bir isim giriniz: ")
 best_heavy_weigths=["Mike Tyson","Muhammed Ali", "Lenox Lewis", "Evander Holyfield"]
 for boxer in best_heavy_weigths:
@@ -30,11 +29,11 @@ for boxer in best_heavy_weigths:
         break
 else:
     print(f"{isim} listede yok")
-"""
 
-#aynı sorunun kaçıncı index olduğunu da yazan bri algoritma yazalım
 
-"""
+Aynı sorunun kaçıncı index olduğunu da yazan bir algoritma yazalım
+
+
 isim= input("Bir isim giriniz: ")
 best_heavy_weigths=["Mike Tyson","Muhammed Ali", "Lenox Lewis", "Evander Holyfield"]
 for boxer in best_heavy_weigths:
@@ -54,5 +53,5 @@ for boxer in best_heavy_weigths:
 else:
     print(f"{isim} listede yok")
     
-"""
+
 
