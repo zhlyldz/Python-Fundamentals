@@ -55,6 +55,35 @@ for i in range (10,1000):
         lst_1.append(i**2)
 print(lst_1)
 
+4.Soru: Klavyeden girilen 25 adet sayıdan negatif olanların toplamını çift sayıların toplamını 7 ye
+ eşit olanların adetini bulup ekrana yazdıran uygulama
+
+sayac=1
+negatif_sayi=0
+cift_sayi=0
+esit=0
+while sayac<26:
+    sayi=int(input("sayi: "))
+    if sayi<0:
+        negatif_sayi+=sayi
+    if sayi%2==0:
+        cift_sayi+=sayi
+    if sayi==7:
+        esit+=1
+    sayac+=1
+print(f"negatif sayi toplamı={negatif_sayi}, çift sayiların toplamı={cift_sayi},yediye eşit olanlar ise {esit}tanedir.")
+
+
+5.Soru: Girilen sayının 5'in kuvveti olup olmadığını bulan program yazınız.olmadı
+
+sayi=int(input("sayi: "))
+for i in range(0,sayi):
+    if sayi==5**i:
+        print(f"5'in {i}. kuvvetidir")
+        break
+else:
+    print("5'in kuvveti değildir")
+
 
 
 
