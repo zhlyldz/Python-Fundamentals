@@ -84,6 +84,21 @@ for i in range(0,sayi):
 else:
     print("5'in kuvveti değildir")
 
+2.yol;
+sayi=int(input("sayi: "))
+if sayi % 5 != 0:
+    print("hayır")
+else:
+    while sayi>0:
+        if sayi%5==0:
+            sayi=sayi/5
+            if sayi == 1:
+                print("evet")
+                break
+        else:
+           print("hayır")
+           break
+
 
 
 
