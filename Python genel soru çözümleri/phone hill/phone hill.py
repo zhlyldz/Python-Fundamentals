@@ -1,24 +1,8 @@
 from pprint import pprint
 
-def main():
-    menu()
-    while True:
-        prosess = input('choose your prosess: ')
-        if prosess == '5':
-            break
-        elif prosess == '1':
-            add_person()
-        elif prosess == '2':
-            list_contact()
-        elif prosess == '3':
-            update()
-        elif prosess == '4':
-            delete_contact(list)
-        else:
-            print('Please enter a value between 1-5')
-
 list=[]
 persons={}
+
 def menu()->None:
     print(
         "create => 1\n"
@@ -28,6 +12,12 @@ def menu()->None:
         "exit => 5\n"
     )
 
+def add_person()->None:
+    name=input('name: ')
+    sur_name=input('surname: ')
+    phone=input('phone: ')
+    save_contact(name,sur_name,phone)
+
 def save_contact(ad:str,soyad:str,tel:str)->None:
     persons={
         'name':ad,
@@ -36,12 +26,6 @@ def save_contact(ad:str,soyad:str,tel:str)->None:
     }
     list.append(persons)
     print('Person registration successful!!')
-
-def add_person()->None:
-    name=input('name: ')
-    sur_name=input('surname: ')
-    phone=input('phone: ')
-    save_contact(name,sur_name,phone)
 
 
 def list_contact()->None:
@@ -77,6 +61,23 @@ def delete_contact(list)->None:
                 print('Transaction canceled')
             else:
                 print('Please choose Y/N')
+
+def main():
+    menu()
+    while True:
+        prosess = input('choose your prosess: ')
+        if prosess == '5':
+            break
+        elif prosess == '1':
+            add_person()
+        elif prosess == '2':
+            list_contact()
+        elif prosess == '3':
+            update()
+        elif prosess == '4':
+            delete_contact(list)
+        else:
+            print('Please enter a value between 1-5')
 
 main()
 
