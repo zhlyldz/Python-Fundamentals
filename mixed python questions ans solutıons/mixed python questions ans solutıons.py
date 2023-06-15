@@ -1,4 +1,4 @@
-
+"""
 Girilen 3 basamaklı bir sayının basamaklarının küpleri toplamı sayının
 kendine eşit olup olmadığını bulan programı yazınız.
 
@@ -98,6 +98,47 @@ else:
         else:
            print("hayır")
            break
+"""
+
+#boş bir student sözlüğü oluşturalım
+#kullanıcıdan yapmak istediği işlemi isteyelim.işlemler=>exit,create(öğrenciden input al),read(listele),update(güncelle),delete(sil)
+#yukarıdaki işlemleri kısacaq CRUD denir.
+#kullanıcıdan yapacağı işlemlere göre inputlar alarak işlemleri gerçekleştirelim.
+#kullanıcı exit diyene kadar istediği kadar işlem yapabilir.
+
+students={'students_id':'first_name':, 'last_name':,'phone':}
+
+
+for i in students:
+    print(students)
+
+while True:
+    process= input('chose your process: ').lower()
+    if process =='exit':
+        break
+    elif process =='create':
+        first_name=input("first name: ")
+        last_name=input("last name: ")
+        phone=input("phone: ")
+
+        students["first_name"]=first_name
+        students["last_name"]=last_name
+        students["phone"]=phone
+        students2={
+            "students_id":{"first_name":first_name,
+                   "last name": last_name
+                   "phone":phone}
+        }
+        students.update((students2))
+        print(students2)
+
+
+
+
+
+
+
+
 
 
 
