@@ -67,17 +67,16 @@ def delete_contact(list)->None:
     surname=input('surname')
     for i in list:
         if i.get('name') == name_1 and i.get('sur_name') == surname:
-            print('Kişiyi silmek istiyor musunuz? E/H')
-            response = input('lütfen cevabınızı giriniz: ').lower()
-            if response == 'E':
+            print('Do you want to delete the contact? Y/N')
+            response = input('Please enter your answer ').lower()
+            if response == 'Y':
                 list.remove(i)
                 print("               ")
-                print('Do you want to delete the contact')
                 list_contact()
-            elif response == 'H':
+            elif response == 'N':
                 print('Transaction canceled')
             else:
-                print('Please choose E/H')
+                print('Please choose Y/N')
 
 main()
 
