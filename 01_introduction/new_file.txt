@@ -1,0 +1,3 @@
+Adı: Burak Yılmaz
+Mesleği: Yazılmcı
+Yazılım Dili: Python

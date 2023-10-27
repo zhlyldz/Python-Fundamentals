@@ -1,0 +1,2 @@
+Application Exception Logs
+b'j!\x85#=\x00\xe9\xdd\xdb\xab\x12 \x14\x04,\x8a' || Machine Name: DESKTOP-4D0B57J || Ip Address: 10.3.25.144 || Error Time: 2023-06-04 10:15:55.587772
